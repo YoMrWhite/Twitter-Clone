@@ -8,7 +8,31 @@
 
 :root {
     --color-primary: #1d9bf0;
+    --color-secondary: #536471;
     --color-white: #fff;
     --color-dark: #000;
     --color-white-secondary: #eff3f4;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    line-height: 1.5;
+    background: var(--color-white);
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 2;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
