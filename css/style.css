@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
 *,
 *::before,
 *::after {
@@ -8,7 +10,7 @@
 
 :root {
     --color-primary: #1d9bf0;
-    --color-secondary: #536471;
+    --color-secondary: #f7f9f9;
     --color-white: #fff;
     --color-dark: #000;
     --color-white-secondary: #eff3f4;
@@ -19,14 +21,9 @@ html {
 }
 
 body {
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Roboto", sans-serif;
     line-height: 1.5;
     background: var(--color-white);
-}
-
-h1 {
-    font-size: 2rem;
-    line-height: 2;
 }
 
 ul {
@@ -35,4 +32,112 @@ ul {
 
 a {
     text-decoration: none;
+    color: var(--color-dark);
+}
+
+/* Utility Classes */
+.icon {
+    width: 28px;
+    margin-right: 2rem;
+}
+
+.l-heading {
+    font-size: 2rem;
+    line-height: 2;
+    font-weight: 700;
+}
+
+.btn {
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1.8rem 3rem;
+    width: 100%;
+}
+
+.btn-primary {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn-primary:hover {
+    background: #3e9ddd;
+}
+
+/* Navbar */
+#nav {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 2rem 2rem 0;
+    width: 275px;
+}
+
+#nav .head {
+    width: 100%;
+    padding: 0 1.5rem;
+}
+
+#nav .head .logo {
+    margin-bottom: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+#nav .head h1.l-heading {
+    display: inline;
+}
+
+#nav .head span.l-heading {
+    font-weight: 300;
+}
+
+#nav .head ul li a > span {
+    align-items: center;
+    display: flex;
+    padding: 1rem;
+}
+
+#nav .head ul li a > span:hover {
+    background: var(--color-secondary);
+    border-radius: 30px;
+}
+
+#nav .head .btn {
+    margin-top: 2rem;
+}
+
+#nav .foot {
+    margin-top: 7rem;
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    width: 100%;
+    margin-left: -1.6rem;
+}
+
+#nav .foot:hover {
+    background: var(--color-secondary);
+    border-radius: 30px;
+}
+
+#nav .foot .profile {
+    width: 40px;
+    border-radius: 100%;
+}
+
+#nav .foot .username {
+    margin: 0 3rem 0 1.5rem;
+}
+
+#nav .foot .username p {
+    font-size: 1.5rem;
+    opacity: 0.7;
+}
+
+#nav .foot .icon {
+    width: 20px;
+    align-self: flex-start;
 }
