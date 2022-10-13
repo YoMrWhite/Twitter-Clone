@@ -5,3 +5,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --color-primary: #1d9bf0;
+    --color-white: #fff;
+    --color-dark: #000;
+    --color-white-secondary: #eff3f4;
+}
